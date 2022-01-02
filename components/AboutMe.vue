@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen w-full flex items-center p-none md:p-5">
-    <div class="bg-indigo-100 rounded-xl w-full animate__animated animate__slideInLeft animate__slow">
+    <div class="bg-indigo-100 rounded-xl w-full animate__animated animate__slideInUp animate__slow">
       <div class="grid grid-cols-3 gap-5 place-items-center">
         <div class="col-span-3 md:col-span-2 text-indigo-700 p-5">
           <div class="text-3xl font-bold text-center md:text-left">

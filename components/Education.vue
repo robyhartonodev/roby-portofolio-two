@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full p-10 md:p-5">
-    <div class="grid grid-cols-1 gap-y-5 animate__animated animate__slideInRight animate__slow">
+    <div class="grid grid-cols-1 gap-y-5 animate__animated animate__slideInUp animate__slow">
       <div class="text-6xl font-bold mb-4 text-indigo-400">
         2016
       </div>

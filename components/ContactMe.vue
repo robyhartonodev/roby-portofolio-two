@@ -1,6 +1,53 @@
 <template>
-  <div class="">
-    Contact Me
+  <div class="animate__animated animate__slideInUp animate__slow bg-white m-5 rounded">
+    <div class="p-5">
+      <div v-if="statusValue.length > 0" class="block bg-indigo-700 text-white text-2xl my-3 p-3 rounded-2xl animate__animated animate__slideInRight animate__slow">
+        {{ statusValue }}
+      </div>
+
+      <div class="text-indigo-700">
+        Your Contact Email
+      </div>
+      <input
+        v-model="emailValue"
+        type="email"
+        name="email"
+        class="mt-1
+              block
+              w-full
+              rounded-md
+              bg-indigo-100
+              border-transparent
+              placeholder-indigo-400
+              focus:border-indigo-500
+              focus:bg-white focus:ring-0"
+        placeholder="example@gmail.com"
+        :disabled="isBusy"
+      >
+      <div class="text-indigo-700 mt-3">
+        Messages
+      </div>
+      <textarea
+        v-model="messageValue"
+        name="message"
+        rows="8"
+        class="mt-1
+            block
+            w-full
+            rounded-md
+            bg-indigo-100
+            border-transparent
+            placeholder-indigo-400
+            focus:border-indigo-500
+            focus:bg-white focus:ring-0"
+        :placeholder="placeholderMessage"
+        :disabled="isBusy"
+      />
+      <button id="my-form-button" class="bg-indigo-800 text-white rounded p-3 mt-3" @click="submitForm">
+        Submit
+      </button>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -11,10 +58,53 @@ export default Vue.extend({
   name: 'ContactMe',
   data () {
     return {
+      isBusy: false,
+      emailValue: '',
+      messageValue: '',
+      statusValue: '',
+      placeholderMessage: 'Hi Roby! \n \nI would like to talk with you.... \n \nThanks and regards, \n \nMax Mustermann'
     };
   },
   mounted () {
+  },
+  methods: {
+    submitForm () {
+      this.isBusy = true;
+      this.statusValue = '';
 
+      if (this.messageValue.length > 0 || this.emailValue.length > 0) {
+        fetch('https://formspree.io/f/mzbybowg', {
+          method: 'POST',
+          body: JSON.stringify({
+            email: this.emailValue,
+            message: this.messageValue
+          }),
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          }
+        })
+          .then(() => {
+            this.statusValue = 'Email is successfully sent! Thank you!';
+
+            this.messageValue = '';
+            this.emailValue = '';
+          })
+          .catch(() => {
+            this.statusValue = 'Email submission is failed! Please try again later!';
+          })
+          .finally(() => {
+            this.isBusy = false;
+          });
+      } else {
+        this.statusValue = 'Please make sure the input fields are not empty!';
+        this.isBusy = false;
+      }
+    }
   }
 });
 </script>
+
+<style scoped>
+
+</style>

@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen w-full p-none md:p-5 animate__animated animate__slideInDown animate__slow">
+  <div class="min-h-screen w-full p-none md:p-5 animate__animated animate__slideInUp animate__slow">
     <div class="p-5 grid grid-cols-1 gap-5 justify-items-center">
       <div class="bg-white w-full h-full rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconTranslate />
           <div>
-            Programmiersprachen
+            Programming languages
           </div>
         </div>
         <div class="text-indigo-700">
