@@ -37,7 +37,7 @@ export default Vue.extend({
         { name: 'AboutMe', label: 'About Me', color: 'bg-indigo-900 hover:bg-indigo-200', to: '/' },
         { name: 'Education', label: 'Educations and Experiences', color: 'bg-indigo-800 hover:bg-indigo-200', to: '/education' },
         { name: 'Skills', label: 'Skills and Frameworks', color: 'bg-indigo-700 hover:bg-indigo-200', to: '/skill' },
-        { name: 'Projects', label: 'My Projects', color: 'bg-indigo-600 hover:bg-indigo-200', to: '/myproject' },
+        { name: 'Projects', label: 'My Projects', color: 'bg-indigo-600 hover:bg-indigo-200', to: '/project' },
         { name: 'ContactMe', label: 'Contact Me', color: 'bg-indigo-500 hover:bg-indigo-200', to: '/contactme' }
       ],
       selectedNavigationItem: 'AboutMe'

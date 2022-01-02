@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AboutMe />
+    <Project />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    MyProject
+    Projects
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'MyProject',
+  name: 'Project',
   data () {
     return {
     };
