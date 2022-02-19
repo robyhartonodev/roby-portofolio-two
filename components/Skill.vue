@@ -1,14 +1,14 @@
 <template>
-  <div class="min-h-screen w-full p-none md:p-5 animate__animated animate__slideInUp animate__slow">
-    <div class="p-5 grid grid-cols-1 gap-5 justify-items-center">
-      <div class="bg-white w-full h-full rounded-xl">
+  <div class="flex p-5 animate__animated animate__slideInUp animate__slow">
+    <div class="flex flex-col space-y-5 w-full basis-full md:basis-2/3">
+      <div class="bg-indigo-100 rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconTranslate />
           <div>
             Programming languages
           </div>
         </div>
-        <div class="text-indigo-700">
+        <div class="text-indigo-500 font-normal">
           <ul class="list-disc px-8 p-2">
             <li>Javascript</li>
             <li>Typescript</li>
@@ -18,7 +18,7 @@
           </ul>
         </div>
       </div>
-      <div class="bg-white w-full rounded-xl">
+      <div class="bg-indigo-100 rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconTool />
           <div>
@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <div class="text-indigo-700">
+        <div class="text-indigo-500 font-normal">
           <ul class="list-disc px-8 p-2">
             <li>Bootstrap</li>
             <li>Tailwind</li>
@@ -38,15 +38,15 @@
           </ul>
         </div>
       </div>
-      <div class="bg-white w-full rounded-xl">
+      <div class="bg-indigo-100 rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconExtra class="mt-1" />
           <div>
             Miscellaneous
           </div>
         </div>
-        <div class="text-indigo-700">
-          <ul class="list-disc px-8 p-2">
+        <div class="text-indigo-500">
+          <ul class="list-disc px-8 p-2 font-normal">
             <li>MVC-Pattern</li>
             <li>Unit Testing (Jest, PHPUnit)</li>
             <li>Git</li>
@@ -57,6 +57,16 @@
             <li>Docker</li>
             <li>Agile (SCRUM)</li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
+      <div class="text-indigo-600 text-5xl flex justify-center items-center">
+        <div class="mr-4">
+          <IconSkill class="h-16 w-16" />
+        </div>
+        <div>
+          Skills
         </div>
       </div>
     </div>

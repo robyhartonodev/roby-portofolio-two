@@ -1,6 +1,7 @@
 <template>
   <div>
-    <AboutMe />
+    <!-- <AboutMe /> -->
+    <MergeData />
   </div>
 </template>
 

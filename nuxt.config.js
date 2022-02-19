@@ -1,3 +1,6 @@
+import dei18n from './lang/de';
+import eni18n from './lang/en';
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -47,11 +50,25 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/i18n'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  // i18n module configuration
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'de',
+      messages: {
+        en: eni18n,
+        de: dei18n
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

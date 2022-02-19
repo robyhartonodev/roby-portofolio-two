@@ -1,6 +1,16 @@
 <template>
-  <div class="h-full w-full p-10 md:p-5">
-    <div class="grid grid-cols-1 gap-y-5 animate__animated animate__slideInUp animate__slow">
+  <div class="flex p-5 animate__animated animate__slideInUp animate__slow space-x-10">
+    <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
+      <div class="text-indigo-600 text-5xl flex justify-center items-center">
+        <div>
+          <IconEducation class="h-16 w-16" />
+        </div>
+        <div class="text-center">
+          Education and Experience
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col basis-full md:basis-2/3 space-y-5">
       <div class="text-6xl font-bold mb-4 text-indigo-400">
         2016
       </div>
@@ -11,7 +21,7 @@
         <div class="text-2xl font-bold text-indigo-700">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 text-justify">
+        <div class="text-lg text-indigo-500 font-normal text-justify">
           {{ item.description }}
         </div>
       </div>
@@ -25,7 +35,7 @@
         <div class="text-2xl font-bold text-indigo-700">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 text-justify">
+        <div class="text-lg text-indigo-500 font-normal text-justify">
           {{ item.description }}
         </div>
       </div>
@@ -39,7 +49,7 @@
         <div class="text-2xl font-bold text-indigo-700">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 text-justify">
+        <div class="text-lg text-indigo-500 font-normal text-justify">
           {{ item.description }}
         </div>
       </div>

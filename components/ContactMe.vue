@@ -1,12 +1,21 @@
 <template>
-  <div class="animate__animated animate__slideInUp animate__slow bg-white m-5 rounded">
-    <div class="p-5">
-      <div v-if="statusValue.length > 0" class="block bg-indigo-700 text-white text-2xl my-3 p-3 rounded-2xl animate__animated animate__slideInRight animate__slow">
+  <div class="flex flex-col p-5 animate__animated animate__slideInUp animate__slow space-y-5">
+    <div class="flex items-center justify-center text-5xl">
+      <div>
+        <IconContact class="w-16 h-16" />
+      </div>
+      <span class="ml-4">Contact Me</span>
+    </div>
+    <div class="bg-indigo-100 rounded p-5">
+      <div
+        v-if="statusValue.length > 0"
+        class="block bg-indigo-700 text-indigo-600 text-2xl my-3 p-3 rounded-2xl animate__animated animate__slideInRight animate__slow w-full"
+      >
         {{ statusValue }}
       </div>
 
       <div class="text-indigo-700">
-        Your Contact Email
+        Your contact email
       </div>
       <input
         v-model="emailValue"
@@ -16,7 +25,7 @@
               block
               w-full
               rounded-md
-              bg-indigo-100
+              bg-indigo-50
               border-transparent
               placeholder-indigo-400
               focus:border-indigo-500
@@ -35,7 +44,7 @@
             block
             w-full
             rounded-md
-            bg-indigo-100
+            bg-indigo-50
             border-transparent
             placeholder-indigo-400
             focus:border-indigo-500
