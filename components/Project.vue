@@ -4,7 +4,9 @@
       <div>
         <IconProject class="w-16 h-16" />
       </div>
-      <span class="ml-4">Projects</span>
+      <span class="ml-4 text-indigo-500">
+        {{ $t('project.title') }}
+      </span>
     </div>
 
     <div class="grid grid-cols-3 gap-8 p-5">
@@ -48,22 +50,22 @@ export default Vue.extend({
     return {
       myProjects: [
         {
-          title: 'VIKTOR',
-          description: 'VIKTOR (Virtuelle Intraklinik Termin Organisator) is a customized enterprise software designed specifically to digitize the workflow of specific departments (Patient transports) in hospitals.',
+          title: this.$t('project.entryOne.title'),
+          description: this.$t('project.entryOne.description'),
           image: 'bdh.jpg',
           link: 'https://www.mittelhessen.de/lokales/wetzlar/braunfels/ideen-fur-den-hol-und-bringdienst_20743306',
           githubLink: null
         },
         {
-          title: 'PILOS',
-          description: 'PILOS is an easy-to-use open source front-end for BigBlueButton servers with a built-in load balancer.',
+          title: this.$t('project.entryTwo.title'),
+          description: this.$t('project.entryTwo.description'),
           image: 'pilos.svg',
           link: 'https://pilos.thm.de/',
           githubLink: 'https://github.com/THM-Health/PILOS'
         },
         {
-          title: 'Wildling',
-          description: 'This project demonstrates the ability to programmatically implement the user interface designed by a professional designer.',
+          title: this.$t('project.entryThree.title'),
+          description: this.$t('project.entryThree.description'),
           image: 'wildling.png',
           link: 'https://wildling-landing-page.vercel.app/',
           githubLink: 'https://github.com/robyhartonodev/wildling-landing-page'

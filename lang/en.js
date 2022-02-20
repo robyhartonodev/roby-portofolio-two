@@ -42,7 +42,7 @@ export default {
       description: 'VIKTOR (Virtuelle Intraklinik Termin Organisator) is a customized enterprise software designed specifically to digitize the workflow of specific departments (Patient transports) in hospitals.'
     },
     entryTwo: {
-      title: 'BDH Klinik Braunfels - Intern Digitalization Project (VIKTOR)',
+      title: 'PILOS',
       description: 'PILOS is an easy-to-use open source front-end for BigBlueButton servers with a built-in load balancer.'
     },
     entryThree: {
@@ -55,6 +55,9 @@ export default {
     labelEmail: 'Your contact email',
     placeholderEmail: 'example@gmail.com',
     labelMessage: 'Message',
-    placeholderMessage: 'Hi Roby! \n \nI would like to talk with you.... \n \nThanks and regards, \n \nMax Mustermann'
+    placeholderMessage: 'Hi Roby! \n \nI would like to talk with you.... \n \nThanks and regards, \n \nMax Mustermann',
+    submitSuccess: 'Email is successfully sent! I will be in contact with you soon.',
+    submitFailed: 'Email submission is failed! Please try again later.',
+    emptyValidation: 'Please make sure the input fields are not empty!'
   }
 };

@@ -1,11 +1,11 @@
 <template>
-  <div class="flex p-5 animate__animated animate__slideInUp animate__slow">
+  <div class="flex space-x-10 p-5 animate__animated animate__slideInUp animate__slow">
     <div class="flex flex-col space-y-5 w-full basis-full md:basis-2/3">
       <div class="bg-indigo-100 rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconTranslate />
           <div>
-            Programming languages
+            {{ $t('skillAndFramework.programmingLanguage') }}
           </div>
         </div>
         <div class="text-indigo-500 font-normal">
@@ -22,7 +22,7 @@
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconTool />
           <div>
-            Frameworks and Libraries
+            {{ $t('skillAndFramework.frameworkAndLibrary') }}
           </div>
         </div>
 
@@ -42,7 +42,7 @@
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
           <IconExtra class="mt-1" />
           <div>
-            Miscellaneous
+            {{ $t('skillAndFramework.miscellaneuous') }}
           </div>
         </div>
         <div class="text-indigo-500">
@@ -65,8 +65,8 @@
         <div class="mr-4">
           <IconSkill class="h-16 w-16" />
         </div>
-        <div>
-          Skills
+        <div class="text-center">
+          {{ $t('skillAndFramework.title') }}
         </div>
       </div>
     </div>

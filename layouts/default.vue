@@ -1,10 +1,12 @@
+
 <template>
   <div>
-    <div class="h-full w-full sticky top-0 p-2 z-20 bg-white">
+    <div class="h-full w-full sticky top-0 z-20 bg-white dark:bg-slate-900">
       <Navigation />
     </div>
+
     <div class="z-0 min-h-screen">
-      <Nuxt />
+      <Nuxt class="bg-white dark:bg-slate-900" />
     </div>
     <div class="relative">
       <button
@@ -32,8 +34,6 @@ export default Vue.extend({
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll, true);
-
-    console.log(this.$i18n.locale);
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll, true);

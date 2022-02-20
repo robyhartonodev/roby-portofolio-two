@@ -4,18 +4,18 @@
       <div>
         <IconContact class="w-16 h-16" />
       </div>
-      <span class="ml-4">Contact Me</span>
+      <span class="ml-4">{{ $t('contactMe.title') }}</span>
     </div>
     <div class="bg-indigo-100 rounded p-5">
       <div
         v-if="statusValue.length > 0"
-        class="block bg-indigo-700 text-indigo-600 text-2xl my-3 p-3 rounded-2xl animate__animated animate__slideInRight animate__slow w-full"
+        class="block bg-indigo-700 text-white text-2xl my-3 p-3 rounded-2xl animate__animated animate__slideInRight animate__slow w-full"
       >
         {{ statusValue }}
       </div>
 
       <div class="text-indigo-700">
-        Your contact email
+        {{ $t('contactMe.labelEmail') }}
       </div>
       <input
         v-model="emailValue"
@@ -30,11 +30,11 @@
               placeholder-indigo-400
               focus:border-indigo-500
               focus:bg-white focus:ring-0"
-        placeholder="example@gmail.com"
+        :placeholder="$t('contactMe.placeholderEmail')"
         :disabled="isBusy"
       >
       <div class="text-indigo-700 mt-3">
-        Messages
+        {{ $t('contactMe.labelMessage') }}
       </div>
       <textarea
         v-model="messageValue"
@@ -49,11 +49,11 @@
             placeholder-indigo-400
             focus:border-indigo-500
             focus:bg-white focus:ring-0"
-        :placeholder="placeholderMessage"
+        :placeholder="$t('contactMe.placeholderMessage')"
         :disabled="isBusy"
       />
       <button id="my-form-button" class="bg-indigo-800 text-white rounded p-3 mt-3" @click="submitForm">
-        Submit
+        {{ $t('submit') }}
       </button>
     </div>
   </div>
@@ -94,19 +94,18 @@ export default Vue.extend({
           }
         })
           .then(() => {
-            this.statusValue = 'Email is successfully sent! Thank you!';
-
+            this.statusValue = <string> this.$t('contactMe.submitSuccess');
             this.messageValue = '';
             this.emailValue = '';
           })
           .catch(() => {
-            this.statusValue = 'Email submission is failed! Please try again later!';
+            this.statusValue = <string> this.$t('contactMe.submitFailed');
           })
           .finally(() => {
             this.isBusy = false;
           });
       } else {
-        this.statusValue = 'Please make sure the input fields are not empty!';
+        this.statusValue = <string> this.$t('contactMe.emailValidation');
         this.isBusy = false;
       }
     }

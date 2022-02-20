@@ -14,13 +14,10 @@
           </span>
         </div>
         <div class="text-xl md:text-3xl text-center text-indigo-600">
-          Web // Frontend // Backend Developer
+          {{ $t('aboutMe.job') }}
         </div>
         <div class="text-justify text-xl font-normal text-indigo-600">
-          Hi! My name is Roby Hartono, a software developer focused on crafting great experiences.
-          Designing and Coding has been my passion since the day I started working on web developments.
-          I enjoy crafting beautifully designed, intuitive and secure web applications. For over past 3 years,
-          I have worked on some web and digitalization projects.
+          {{ $t('aboutMe.description') }}
         </div>
       </div>
     </div>

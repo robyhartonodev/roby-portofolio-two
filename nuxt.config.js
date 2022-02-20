@@ -62,12 +62,16 @@ export default {
     locales: ['en', 'de'],
     defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'de',
+      fallbackLocale: 'en',
       messages: {
         en: eni18n,
         de: dei18n
       }
     }
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   alwaysRedirect: true
+    // }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

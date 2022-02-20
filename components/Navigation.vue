@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 text-indigo-600 font-bold text-center items-center justify-between">
+  <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 text-indigo-600 font-bold text-center items-center justify-between border-b-2 border-indigo-500">
     <div class="p-5 flex flex-row items-center space-x-3">
-      <div class="rounded-full bg-indigo-100 p-3 text-3xl">
+      <div class="rounded-full p-3 text-3xl">
         <span class="text-indigo-800">
           R
         </span>
@@ -21,36 +21,39 @@
         </a>
       </div>
     </div>
+    <!-- Dark mode switcher -->
     <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-3">
       <div
         class="cursor-pointer on-hover p-2"
         @click="switchDarkMode"
       >
         <IconMoon
-          v-if="isDarkMode"
-          class="h-8 w-8"
-        />
-        <IconSun
           v-if="!isDarkMode"
           class="h-8 w-8"
         />
+        <IconSun
+          v-if="isDarkMode"
+          class="h-8 w-8"
+        />
       </div>
+      <!-- Language switcher -->
       <div
-        class="cursor-pointer on-hover p-2"
-        @click="switchLanguage"
+        class="on-hover p-2"
       >
-        <span
+        <nuxt-link
           v-if="$i18n.locale === 'en'"
-          @click="$i18n.setLocale('en')"
+          class="cursor-pointer"
+          :to="switchLocalePath('de')"
         >
           DE
-        </span>
-        <span
+        </nuxt-link>
+        <nuxt-link
           v-if="$i18n.locale === 'de'"
-          @click="$i18n.setLocale('de')"
+          class="cursor-pointer"
+          :to="switchLocalePath('en')"
         >
           EN
-        </span>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -65,15 +68,13 @@ export default Vue.extend({
   data () {
     return {
       navigationItems: [
-        { name: 'AboutMe', label: 'About me', color: 'bg-indigo-900 hover:bg-indigo-200', to: '/', id: 'aboutme' },
-        { name: 'Education', label: 'Education and Experience', color: 'bg-indigo-800 hover:bg-indigo-200', to: '/education', id: 'education' },
-        { name: 'Skills', label: 'Skill and Framework', color: 'bg-indigo-700 hover:bg-indigo-200', to: '/skill', id: 'skill' },
-        { name: 'Projects', label: 'Project', color: 'bg-indigo-600 hover:bg-indigo-200', to: '/project', id: 'project' },
-        { name: 'ContactMe', label: 'Contact me', color: 'bg-indigo-500 hover:bg-indigo-200', to: '/contactme', id: 'contactme' }
+        { name: 'AboutMe', label: this.$t('aboutMe.title'), color: 'bg-indigo-900 hover:bg-indigo-200', id: 'aboutme' },
+        { name: 'Education', label: this.$t('educationAndExperience.title'), color: 'bg-indigo-800 hover:bg-indigo-200', id: 'education' },
+        { name: 'Skills', label: this.$t('skillAndFramework.title'), color: 'bg-indigo-700 hover:bg-indigo-200', id: 'skill' },
+        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' },
+        { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
       ],
-      selectedNavigationItem: 'AboutMe',
-      themeMode: 'dark',
-      currentLanguage: 'de'
+      themeMode: 'dark'
     };
   },
   computed: {
@@ -81,9 +82,18 @@ export default Vue.extend({
       return this.$store.state.isDarkMode;
     }
   },
-  mounted () {
-
+  watch: {
+    '$route' () {
+      this.navigationItems = [
+        { name: 'AboutMe', label: this.$t('aboutMe.title'), color: 'bg-indigo-900 hover:bg-indigo-200', id: 'aboutme' },
+        { name: 'Education', label: this.$t('educationAndExperience.title'), color: 'bg-indigo-800 hover:bg-indigo-200', id: 'education' },
+        { name: 'Skills', label: this.$t('skillAndFramework.title'), color: 'bg-indigo-700 hover:bg-indigo-200', id: 'skill' },
+        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' },
+        { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
+      ];
+    }
   },
+  mounted () {},
   methods: {
     onNavigationItemClick (link:string) {
       const id = `#${link}`;
@@ -95,8 +105,8 @@ export default Vue.extend({
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     },
-    getActiveClass (name: string) {
-      return (this.selectedNavigationItem === name) ? 'active' : '';
+    transKey (key: string) {
+      return this.$t(key);
     },
     ...mapMutations({
       switchDarkMode: 'switchDarkMode'

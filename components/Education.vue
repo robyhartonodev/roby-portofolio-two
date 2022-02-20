@@ -6,7 +6,7 @@
           <IconEducation class="h-16 w-16" />
         </div>
         <div class="text-center">
-          Education and Experience
+          {{ $t('educationAndExperience.title') }}
         </div>
       </div>
     </div>
@@ -67,32 +67,32 @@ export default Vue.extend({
       data2016: [
         {
           span: '2016-2020',
-          title: 'THM-Gießen - Medizinische Informatik - Bachelor of Science (B.Sc.)',
-          description: 'Medical informatics supports and models healthcare processes with IT tools. This includes, for example, the development of hospital information and practice management systems or new diagnostic-therapeutic procedures. Medical informatics specialists are employed in hospitals, by physicians in private practice and in industry by software and hardware manufacturers.'
+          title: this.$t('educationAndExperience.entryOne.title'),
+          description: this.$t('educationAndExperience.entryOne.description')
         }
       ],
       data2019: [
         {
           span: '04.2019 - 04.2020',
-          title: 'BDH Klinik Braunfels - Intern Digitalization Project (VIKTOR)',
-          description: 'Viktor (Virtual Intraclinic Appointment Organizer) is an application that supports and optimizes the workflows of the HUB staff in BDH Klinik Braunfels.'
+          title: this.$t('educationAndExperience.entryTwo.title'),
+          description: this.$t('educationAndExperience.entryTwo.description')
         }
       ],
       data2020: [
         {
           span: '2020 - NOW',
-          title: 'THM Gießen - Digitale Medizin - Master of Science (M.Sc.)',
-          description: "The master's program in Digital Medicine focuses on the topics of modern medicine that are necessary for digitization in healthcare. It builds on a completed bachelor's or diploma degree in the healthcare sector. The master's degree then qualifies students to conduct scientific research and to take on strategic and management tasks in the field of digital medicine."
+          title: this.$t('educationAndExperience.entryThree.title'),
+          description: this.$t('educationAndExperience.entryThree.description')
         },
         {
           span: '06.2020-09.2020',
-          title: 'THM Gießen FB Gesundheit - Werkstudent Web Developer PILOS Project',
-          description: 'PILOS (Platform for Interactive Live-Online Seminars) is an easy to use frontend for BigBlueButton developed at the TH Mittelhessen University of Applied Sciences (THM) Faculty of Health (FB GES). It is based on the experience of students, teachers and staff during the covid-19 pandemic, and the raised need for a modern and flexible video conferencing system for the use case of digital class rooms, group learning and other digital meetings. Here I worked with the group and learned some code quality stacks like ESLint, PHPCSfixer, etc. and testing techniques like unit testing with Mocha and Vue Test Utils and PHPUnit Test for feature and unit testing.'
+          title: this.$t('educationAndExperience.entryFour.title'),
+          description: this.$t('educationAndExperience.entryFour.description')
         },
         {
           span: '06.2020 - NOW',
-          title: 'BDH Klinik Braunfels - Werkstudent Digitalization project (VIKTOR)',
-          description: 'Viktor (Virtual Intraclinic Appointment Organizer) is an application that supports and optimizes the workflows of the HUB staff in BDH Klinik Braunfels. This project is built on various frameworks like Vue, Quasar and Laravel.'
+          title: this.$t('educationAndExperience.entryFive.title'),
+          description: this.$t('educationAndExperience.entryFive.description')
         }
       ]
     };

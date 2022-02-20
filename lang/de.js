@@ -55,6 +55,9 @@ export default {
     labelEmail: 'Ihre Email',
     placeholderEmail: 'example@gmail.com',
     labelMessage: 'Nachricht',
-    placeholderMessage: 'Hallo Roby! \n \nIch hätte gern ein Gespräch mit Ihnen und ... \n \nMit freundlichen Grüßen, \n \nMax Mustermann'
+    placeholderMessage: 'Hallo Roby! \n \nIch hätte gern ein Gespräch mit Ihnen und ... \n \nMit freundlichen Grüßen, \n \nMax Mustermann',
+    submitSuccess: 'Email is successfully sent! I will be in contact with you soon.',
+    submitFailed: 'Email submission is failed! Please try again later.',
+    emptyValidation: 'Please make sure the input fields are not empty!'
   }
 };
