@@ -6,17 +6,17 @@
           <img src="~/assets/images/me-transparent.png" class="max-w-sm w-full mt-12 md:mt-0 rounded-full bg-indigo-50">
         </div>
         <div class="text-center text-5xl">
-          <span class="text-indigo-800">
+          <span class="text-indigo-700 dark:text-indigo-300">
             Roby
           </span>
-          <span class="text-indigo-600">
+          <span class="text-indigo-500 dark:text-indigo-100 ">
             Hartono
           </span>
         </div>
-        <div class="text-xl md:text-3xl text-center text-indigo-600">
+        <div class="text-xl md:text-3xl text-center text-indigo-700 dark:text-indigo-300">
           {{ $t('aboutMe.job') }}
         </div>
-        <div class="text-justify text-xl font-normal text-indigo-600">
+        <div class="text-justify text-xl font-normal text-indigo-700 dark:text-indigo-300">
           {{ $t('aboutMe.description') }}
         </div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col p-5 animate__animated animate__slideInUp animate__slow space-y-5">
-    <div class="flex items-center justify-center text-5xl">
+    <div class="flex items-center justify-center text-5xl text-indigo-700 dark:text-indigo-300">
       <div>
         <IconContact class="w-16 h-16" />
       </div>
@@ -94,18 +94,18 @@ export default Vue.extend({
           }
         })
           .then(() => {
-            this.statusValue = <string> this.$t('contactMe.submitSuccess');
+            this.statusValue = this.$t('contactMe.submitSuccess').toString();
             this.messageValue = '';
             this.emailValue = '';
           })
           .catch(() => {
-            this.statusValue = <string> this.$t('contactMe.submitFailed');
+            this.statusValue = this.$t('contactMe.submitFailed').toString();
           })
           .finally(() => {
             this.isBusy = false;
           });
       } else {
-        this.statusValue = <string> this.$t('contactMe.emailValidation');
+        this.statusValue = this.$t('contactMe.emptyValidation').toString();
         this.isBusy = false;
       }
     }

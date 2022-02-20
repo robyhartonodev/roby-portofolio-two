@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 text-indigo-600 font-bold text-center items-center justify-between border-b-2 border-indigo-500">
+  <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 text-indigo-600 font-bold text-center items-center justify-between p-3">
     <div class="p-5 flex flex-row items-center space-x-3">
       <div class="rounded-full p-3 text-3xl">
-        <span class="text-indigo-800">
+        <span class="text-indigo-700 dark:text-indigo-300">
           R
         </span>
-        <span class="text-indigo-600">
+        <span class="text-indigo-500 dark:text-indigo-100">
           H
         </span>
       </div>
@@ -13,7 +13,7 @@
         <a
           v-for="item in navigationItems"
           :key="item.name"
-          class="font-sans cursor-pointer text-indigo-600 font-bold items-center justify-center p-3 on-hover"
+          class="font-sans cursor-pointer text-indigo-700 dark:text-indigo-300 font-bold items-center justify-center p-3 on-hover"
           :href="`#${item.id}`"
           @click="onNavigationItemClick(item.id)"
         >
@@ -22,7 +22,7 @@
       </div>
     </div>
     <!-- Dark mode switcher -->
-    <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-3">
+    <div class="flex flex-col md:flex-row items-center space-x-0 md:space-x-3 text-indigo-700 dark:text-indigo-300">
       <div
         class="cursor-pointer on-hover p-2"
         @click="switchDarkMode"
@@ -38,7 +38,7 @@
       </div>
       <!-- Language switcher -->
       <div
-        class="on-hover p-2"
+        class="on-hover p-2 text-indigo-700 dark:text-indigo-300"
       >
         <nuxt-link
           v-if="$i18n.locale === 'en'"

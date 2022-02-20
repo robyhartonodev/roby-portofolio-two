@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
-      <div class="text-indigo-600 text-5xl flex justify-center items-center">
+      <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex justify-center items-center">
         <div class="mr-4">
           <IconSkill class="h-16 w-16" />
         </div>

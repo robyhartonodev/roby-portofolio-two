@@ -21,7 +21,7 @@
         >
           <img :src="require(`~/assets/images/${project.image}`)" class="rounded-t-lg h-72 w-full">
         </div>
-        <div class="text-indigo-600 font-bold text-3xl p-5 flex flex-row items-center">
+        <div class="font-bold text-3xl p-5 flex flex-row items-center">
           <div class="mr-2">
             {{ project.title }}
           </div>
