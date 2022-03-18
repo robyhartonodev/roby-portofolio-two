@@ -93,7 +93,12 @@ export default Vue.extend({
       ];
     }
   },
-  mounted () {},
+  mounted () {
+    // Switch immediately to dark mode, if it's not yet set by the user
+    if (!localStorage.theme) {
+      this.switchDarkMode();
+    }
+  },
   methods: {
     onNavigationItemClick (link:string) {
       const id = `#${link}`;
