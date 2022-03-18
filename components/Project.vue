@@ -1,19 +1,19 @@
 <template>
-  <div class="mt-8">
-    <div class="flex items-center justify-center text-5xl">
+  <div class="mt-8 min-h-screen flex flex-col items-center">
+    <div class="flex flex-col items-center justify-center text-5xl text-indigo-700 dark:text-indigo-300">
       <div>
         <IconProject class="w-16 h-16" />
       </div>
-      <span class="ml-4 text-indigo-500">
+      <span>
         {{ $t('project.title') }}
       </span>
     </div>
 
-    <div class="grid grid-cols-3 gap-8 p-5">
+    <div class="grid grid-cols-3 gap-4 p-5">
       <div
         v-for="project in myProjects"
         :key="project.title"
-        class="h-full bg-indigo-100 rounded-lg"
+        class="h-full bg-indigo-100 rounded-lg col-span-3 md:col-span-1"
       >
         <div
           class="w-full cursor-pointer border-b-2 border-indigo-500"

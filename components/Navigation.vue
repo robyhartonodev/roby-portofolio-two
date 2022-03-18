@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 text-indigo-600 font-bold text-center items-center justify-between p-3">
-    <div class="p-5 flex flex-row items-center space-x-3">
+    <div class="p-1 flex flex-row items-center space-x-3">
       <div class="rounded-full p-3 text-3xl">
         <span class="text-indigo-700 dark:text-indigo-300">
           R

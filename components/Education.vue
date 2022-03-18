@@ -1,7 +1,7 @@
 <template>
-  <div class="flex p-5 animate__animated animate__slideInUp animate__slow space-x-10">
+  <div class="flex p-5 animate__animated animate__slideInUp animate__slow space-x-0 md:space-x-10">
     <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
-      <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex justify-center items-center">
+      <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex flex-col justify-center items-center">
         <div>
           <IconEducation class="h-16 w-16" />
         </div>

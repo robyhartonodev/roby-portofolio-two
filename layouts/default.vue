@@ -11,11 +11,11 @@
     <div class="relative">
       <button
         v-show="showButton"
-        class="rounded-full bg-indigo-800 fixed bottom-5 right-5 text-white hover:bg-indigo-500"
+        class="rounded-full bg-indigo-700 fixed bottom-5 right-5 text-white hover:bg-indigo-500"
         :class="showButton ? 'animate__animated animate__slideInUp animate__slow': ''"
         @click="onScrollToTop"
       >
-        <IconChevronUp class="h-16 w-16" />
+        <IconChevronUp class="h-12 w-12" />
       </button>
     </div>
   </div>

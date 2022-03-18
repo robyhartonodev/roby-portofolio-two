@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col p-5 animate__animated animate__slideInUp animate__slow space-y-5">
-    <div class="flex items-center justify-center text-5xl text-indigo-700 dark:text-indigo-300">
+    <div class="flex flex-col items-center justify-center text-5xl text-indigo-700 dark:text-indigo-300">
       <div>
         <IconContact class="w-16 h-16" />
       </div>

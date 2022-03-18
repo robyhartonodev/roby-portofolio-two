@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-10 p-5 animate__animated animate__slideInUp animate__slow">
+  <div class="flex space-x-0 md:space-x-10 p-5 animate__animated animate__slideInUp animate__slow">
     <div class="flex flex-col space-y-5 w-full basis-full md:basis-2/3">
       <div class="bg-indigo-100 rounded-xl">
         <div class="flex space-x-2 text-xl bg-indigo-700 p-5 text-white rounded-t-xl">
@@ -61,7 +61,7 @@
       </div>
     </div>
     <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
-      <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex justify-center items-center">
+      <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex flex-col justify-center items-center">
         <div class="mr-4">
           <IconSkill class="h-16 w-16" />
         </div>
