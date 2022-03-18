@@ -51,11 +51,12 @@
             <li>Unit Testing (Jest, PHPUnit)</li>
             <li>Git</li>
             <li>GitLab</li>
-            <li>Material design</li>
+            <li>Material Design</li>
             <li>REST-API</li>
-            <li>Responsives Design</li>
+            <li>Responsive Design</li>
             <li>Docker</li>
             <li>Agile (SCRUM)</li>
+            <li>Figma</li>
           </ul>
         </div>
       </div>

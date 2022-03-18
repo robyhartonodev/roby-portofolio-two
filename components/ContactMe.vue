@@ -4,7 +4,7 @@
       <div>
         <IconContact class="w-16 h-16" />
       </div>
-      <span class="ml-4">{{ $t('contactMe.title') }}</span>
+      <span class="text-center">{{ $t('contactMe.title') }}</span>
     </div>
     <div class="bg-indigo-100 rounded p-5">
       <div
