@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full p-5 flex items-center min-h-screen">
-    <div class="animate__animated animate__slideInUp animate__slow">
+    <div>
       <div class="flex flex-col md:flex-row items-center">
         <div class="basis-full md:basis-1/4 text-center mr-5">
           <img src="~/assets/images/me-transparent.png" class="max-w-sm w-full mt-12 md:mt-0 rounded-full bg-indigo-50">

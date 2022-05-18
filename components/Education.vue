@@ -1,5 +1,5 @@
 <template>
-  <div class="flex p-5 animate__animated animate__slideInUp animate__slow space-x-0 md:space-x-10">
+  <div class="flex p-5 space-x-0 md:space-x-10 bg-indigo-100 dark:bg-indigo-500">
     <div class="hidden h-screen sticky top-0 md:flex items-center justify-center basis-1/3">
       <div class="text-indigo-700 dark:text-indigo-300 text-5xl flex flex-col justify-center items-center">
         <div>
@@ -21,9 +21,9 @@
         <div class="text-2xl font-bold text-indigo-700 dark:text-indigo-300">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
+        <!-- <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
           {{ item.description }}
-        </div>
+        </div> -->
       </div>
       <div class="text-6xl font-bold mb-4 text-indigo-400">
         2019
@@ -35,9 +35,9 @@
         <div class="text-2xl font-bold text-indigo-700 dark:text-indigo-300">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
+        <!-- <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
           {{ item.description }}
-        </div>
+        </div> -->
       </div>
       <div class="text-6xl font-bold mb-4 text-indigo-400">
         2020
@@ -49,9 +49,9 @@
         <div class="text-2xl font-bold text-indigo-700 dark:text-indigo-300">
           {{ item.title }}
         </div>
-        <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
+        <!-- <div class="text-lg text-indigo-700 dark:text-indigo-300 font-normal text-justify">
           {{ item.description }}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@ export default Vue.extend({
           description: this.$t('educationAndExperience.entryFour.description')
         },
         {
-          span: '06.2020 - NOW',
+          span: '06.2020 - 03.2022',
           title: this.$t('educationAndExperience.entryFive.title'),
           description: this.$t('educationAndExperience.entryFive.description')
         }

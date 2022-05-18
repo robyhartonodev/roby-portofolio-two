@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <div class="h-full w-full sticky top-0 z-20 bg-white dark:bg-slate-900 drop-shadow-md">
+    <div class="h-full w-full sticky top-0 z-20 bg-white dark:bg-slate-900">
       <Navigation />
     </div>
 

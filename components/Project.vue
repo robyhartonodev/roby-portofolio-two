@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-8 min-h-screen flex flex-col items-center">
+  <div class="min-h-screen flex flex-col items-center bg-indigo-100 dark:bg-indigo-500 p-5">
     <div class="flex flex-col items-center justify-center text-5xl text-indigo-700 dark:text-indigo-300">
       <div>
         <IconProject class="w-16 h-16" />
@@ -13,7 +13,7 @@
       <div
         v-for="project in myProjects"
         :key="project.title"
-        class="h-full bg-indigo-100 rounded-lg col-span-3 md:col-span-1"
+        class="h-full bg-indigo-200 rounded-lg col-span-3 md:col-span-1"
       >
         <div
           class="w-full cursor-pointer border-b-2 border-indigo-500"
