@@ -48,6 +48,14 @@ export default {
     entryThree: {
       title: 'Wildling',
       description: 'Dieses Projekt demonstriert die Fähigkeit, die von einem professionellen Designer entworfene Benutzeroberfläche programmatisch umzusetzen.'
+    },
+    entryFour: {
+      title: 'Fajour',
+      description: 'Fajour ist eine Offline-Bibel- und Journal-App für Android. Dieses Projekt demonstriert die Fähigkeit, eine Android-App im Playstore zu veröffentlichen.'
+    },
+    entryFive: {
+      title: 'Pepegram',
+      description: 'Pepegram ist eine Demo-Instagram-Klon-Anwendung. Diese Anwendung zeigt die Fähigkeit, bestimmte Design genau zu implementieren und die Fähigkeit, bekannte Backend Firebase zu konsumieren.'
     }
   },
   contactMe: {

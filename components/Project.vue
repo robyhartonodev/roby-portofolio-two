@@ -13,13 +13,13 @@
       <div
         v-for="project in myProjects"
         :key="project.title"
-        class="h-full bg-indigo-200 rounded-lg col-span-3 md:col-span-1"
+        class="h-full bg-indigo-200 rounded-lg col-span-4 md:col-span-1"
       >
         <div
           class="w-full cursor-pointer border-b-2 border-indigo-500"
           @click="redirectToLink(project.link)"
         >
-          <img :src="require(`~/assets/images/${project.image}`)" class="rounded-t-lg h-72 w-full">
+          <img :src="require(`~/assets/images/${project.image}`)" class="rounded-t-lg h-72 w-full p-2">
         </div>
         <div class="font-bold text-3xl p-5 flex flex-row items-center">
           <div class="mr-2">
@@ -63,12 +63,26 @@ export default Vue.extend({
           link: 'https://pilos.thm.de/',
           githubLink: 'https://github.com/THM-Health/PILOS'
         },
+        // {
+        //   title: this.$t('project.entryThree.title'),
+        //   description: this.$t('project.entryThree.description'),
+        //   image: 'wildling.png',
+        //   link: 'https://wildling-landing-page.vercel.app/',
+        //   githubLink: 'https://github.com/robyhartonodev/wildling-landing-page'
+        // },
         {
-          title: this.$t('project.entryThree.title'),
-          description: this.$t('project.entryThree.description'),
-          image: 'wildling.png',
-          link: 'https://wildling-landing-page.vercel.app/',
-          githubLink: 'https://github.com/robyhartonodev/wildling-landing-page'
+          title: this.$t('project.entryFour.title'),
+          description: this.$t('project.entryFour.description'),
+          image: 'fajour.svg',
+          link: 'https://play.google.com/store/apps/details?id=com.fajour.app',
+          githubLink: 'https://github.com/robyhartonodev/fajour'
+        },
+        {
+          title: this.$t('project.entryFive.title'),
+          description: this.$t('project.entryFive.description'),
+          image: 'pepegram.svg',
+          link: 'https://pepegram-f8405.web.app/',
+          githubLink: 'https://github.com/robyhartonodev/pepegram-vue'
         }
       ]
     };

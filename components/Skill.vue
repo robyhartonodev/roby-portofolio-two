@@ -28,8 +28,8 @@
 
         <div class="text-indigo-500 font-normal">
           <ul class="list-disc px-8 p-2">
-            <li>Bootstrap</li>
-            <li>Tailwind</li>
+            <li>Bootstrap CSS</li>
+            <li>Tailwind CSS</li>
             <li>Ionic</li>
             <li>Vue</li>
             <li>Laravel</li>
