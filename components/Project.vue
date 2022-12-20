@@ -63,13 +63,6 @@ export default Vue.extend({
           link: 'https://pilos.thm.de/',
           githubLink: 'https://github.com/THM-Health/PILOS'
         },
-        // {
-        //   title: this.$t('project.entryThree.title'),
-        //   description: this.$t('project.entryThree.description'),
-        //   image: 'wildling.png',
-        //   link: 'https://wildling-landing-page.vercel.app/',
-        //   githubLink: 'https://github.com/robyhartonodev/wildling-landing-page'
-        // },
         {
           title: this.$t('project.entryFour.title'),
           description: this.$t('project.entryFour.description'),

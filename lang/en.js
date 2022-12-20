@@ -55,7 +55,7 @@ export default {
     },
     entryFive: {
       title: 'Pepegram',
-      description: 'Pepegram is a demo Instagram clone application. This application shows the ability to accurately implement certain design and the ability to consume known backend Firebase. Anmerkungen: Es sind nicht alle Funktionalitäten implementiert.'
+      description: 'Pepegram is a demo Instagram clone application. This application shows the ability to accurately implement certain design and the ability to consume known backend Firebase. Notes: Not all functionalities are implemented.'
     }
   },
   contactMe: {

@@ -55,7 +55,7 @@ export default {
     },
     entryFive: {
       title: 'Pepegram',
-      description: 'Pepegram ist eine Demo-Instagram-Klon-Anwendung. Diese Anwendung zeigt die Fähigkeit, bestimmte Design genau zu implementieren und die Fähigkeit, bekannte Backend Firebase zu konsumieren.'
+      description: 'Pepegram ist eine Demo-Instagram-Klon-Anwendung. Diese Anwendung zeigt die Fähigkeit, bestimmte Design genau zu implementieren und die Fähigkeit, bekannte Backend Firebase zu konsumieren. Anmerkungen: Es sind nicht alle Funktionalitäten implementiert.'
     }
   },
   contactMe: {
