@@ -22,15 +22,21 @@
               {{ $t('aboutMe.description') }}
             </div>
             <div class="flex">
-              <button class="bg-indigo-500 rounded-lg p-3 text-white w-full md:w-1/4 hover:bg-indigo-200 hover:text-indigo-500 font-bold">
+              <!-- <button class="bg-indigo-500 rounded-lg p-3 text-white w-full md:w-1/4 hover:bg-indigo-200 hover:text-indigo-500 font-bold">
                 Download CV
-              </button>
+              </button> -->
+              <a
+                href="/CV.pdf"
+                download=""
+                class="bg-indigo-500 rounded-lg p-3 text-white w-full md:w-1/4 hover:bg-indigo-200 hover:text-indigo-500 font-bold text-center text-xl"
+              >
+                Download CV
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
