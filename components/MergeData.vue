@@ -7,8 +7,8 @@
     <Skill id="skill" class="scroll-mt-24 scroll-mb-24" />
     <WaveThree />
     <Project id="project" class="scroll-mt-32 scroll-mb-24" />
-    <WaveFour />
-    <ContactMe id="contactme" class="-scroll-mb-4" />
+    <!-- <WaveFour />
+    <ContactMe id="contactme" class="-scroll-mb-4" /> -->
   </div>
 </template>
 

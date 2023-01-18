@@ -71,8 +71,8 @@ export default Vue.extend({
         { name: 'AboutMe', label: this.$t('aboutMe.title'), color: 'bg-indigo-900 hover:bg-indigo-200', id: 'aboutme' },
         { name: 'Education', label: this.$t('educationAndExperience.title'), color: 'bg-indigo-800 hover:bg-indigo-200', id: 'education' },
         { name: 'Skills', label: this.$t('skillAndFramework.title'), color: 'bg-indigo-700 hover:bg-indigo-200', id: 'skill' },
-        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' },
-        { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
+        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' }
+        // { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
       ],
       themeMode: 'dark'
     };
@@ -88,8 +88,8 @@ export default Vue.extend({
         { name: 'AboutMe', label: this.$t('aboutMe.title'), color: 'bg-indigo-900 hover:bg-indigo-200', id: 'aboutme' },
         { name: 'Education', label: this.$t('educationAndExperience.title'), color: 'bg-indigo-800 hover:bg-indigo-200', id: 'education' },
         { name: 'Skills', label: this.$t('skillAndFramework.title'), color: 'bg-indigo-700 hover:bg-indigo-200', id: 'skill' },
-        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' },
-        { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
+        { name: 'Projects', label: this.$t('project.title'), color: 'bg-indigo-600 hover:bg-indigo-200', id: 'project' }
+        // { name: 'ContactMe', label: this.$t('contactMe.title'), color: 'bg-indigo-500 hover:bg-indigo-200', id: 'contactme' }
       ];
     }
   },
